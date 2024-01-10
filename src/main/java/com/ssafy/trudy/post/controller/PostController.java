@@ -40,7 +40,7 @@ public class PostController {
             @ApiResponse(responseCode = "500", description = "INTERNAL SERVER ERROR")
     })
 
-    //포럼 게시글 목록 가져오기 - 정상 동작
+    //포럼 게시글 목록 가져오기 - 정상 동작test
     @GetMapping
     public  Page<PostDto.PostCombine> postList(@RequestParam(required = false) String title,
                                       @RequestParam(required = false) String content,
