@@ -31,6 +31,13 @@ import java.util.Map;
 public class PostController {
     private final PostService postService;
 
+    @GetMapping("/test")
+    public String test(){
+
+        System.out.println("test");
+        return "test OK";
+    }
+
     @Operation(summary = "get posts", description = "포럼 게시글 목록 가져오기")
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "OK",
