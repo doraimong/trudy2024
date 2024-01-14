@@ -22,8 +22,6 @@ bin/
 *.iws
 *.iml
 *.ipr
-resources/application.properties
-resources/email.properties
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
