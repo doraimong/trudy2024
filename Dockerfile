@@ -9,7 +9,7 @@ COPY build.gradle .
 COPY settings.gradle .
 COPY src src
 RUN chmod +x ./gradlew
-RUN ./gradlew bootJAR
+RUN ./gradlew bootJAR -Dorg.gradle.daemon=false
 
 FROM adoptopenjdk/openjdk11
 COPY --from=builder build/libs/*.jar app.jar
