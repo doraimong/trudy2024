@@ -9,7 +9,7 @@ COPY build.gradle .
 COPY settings.gradle .
 COPY src src
 RUN chmod +x ./gradlew
-RUN ./gradlew bootJAR  \
+RUN ./gradlew bootJAR --stacktrace
 #    -Dorg.gradle.daemon=false
 
 FROM adoptopenjdk/openjdk11
